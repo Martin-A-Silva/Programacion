@@ -26,7 +26,7 @@ int main(){
 
 	while(*(str+i)!='.'){							//Se evalua la cadena caracter a caracter hasta que llegue al punto. Todo lo que esté después no es considerado (se supone que es sólo una oración!)
 
-		if((*(str+i)==' ')||(*(str+i)==',')||(*(str+i)==';')){				//Se toma como separadores de palabras a los espacios, comas, y punto y comas
+		if((*(str+i)==' ')||(*(str+i)==',')||(*(str+i)==';')){			//Se toma como separadores de palabras a los espacios, comas, y punto y comas
 			if((*(str+i-1)=='a')||(*(str+i-1)=='e')||(*(str+i-1)=='i')||	//Una vez separada la palabra, se ve si la ultima letra es una vocal
 			   (*(str+i-1)=='o')||(*(str+i-1)=='u')){
 
@@ -39,9 +39,9 @@ int main(){
 
 	}
 
-	if(*(str+i)=='.'){													//Esta sección es sólo
+	if(*(str+i)=='.'){							//Esta sección es sólo
 		if((*(str+i-1)=='a')||(*(str+i-1)=='e')||(*(str+i-1)=='i')||	//para evaluar si la ÚLTIMA palabra
- 		   (*(str+i-1)=='o')||(*(str+i-1)=='u')){						//de la oración termina en vocal.
+ 		   (*(str+i-1)=='o')||(*(str+i-1)=='u')){			//de la oración termina en vocal.
 
 			con_vocal++;
 
