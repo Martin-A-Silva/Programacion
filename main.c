@@ -34,15 +34,9 @@ int esVocal(char *a){			//Para verificar si el caracter es una vocal (retorna 1 
 
 	*a=tolower(*a);
 	int r=0;
-	char *b;
 	char str[]="aeiouáéíóú";
-
-	b=(strchr(str,*a));			//Si la función no encuentra el caracter en la cadena patrón
-								//devuelve un apuntador nulo, de lo contrario el caracter ha sido encontrado
-	if(b==NULL){
-		//Nada que hacer acá.
-	}
-	else{
+								
+	if(strchr(str,*a)){		//devuelve un apuntador nulo, de lo contrario el caracter ha sido encontrado
 		r=1;
 	}
 
