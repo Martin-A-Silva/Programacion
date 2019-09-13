@@ -47,7 +47,7 @@ int esVocal(char *a){			//Para verificar si el caracter es una vocal (retorna 1 
 int finPalabra(char *a){						//Será fin de palabra cuando no sea un
 	int r=0;									//caracter del alfabeto ni una vocal acentuada
 
-	if((isalpha(*a)==0)&&(esVocal(a)==0)){
+	if(((isalpha(*a)==0)&&(esVocal(a)==0))&&(*a!='ñ'){
 		r=1;
 
 	}
